@@ -1,0 +1,12 @@
+version: '3.3'
+services:
+  plot:
+    build: .
+    environment:
+      MPLCONFIGDIR: /etc
+    volumes:
+      - .:data-volume
+    working_dir: data-volume
+    entrypoint:
+      - python
+      - plot.py

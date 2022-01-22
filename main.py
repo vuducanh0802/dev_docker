@@ -12,6 +12,7 @@ def main():
         user_input = input('Do you want another list (y/[n])? ')
         if user_input != 'y':
             break
+        plt.savefig('plot.png')
     
 
 if __name__ == '__main__':
